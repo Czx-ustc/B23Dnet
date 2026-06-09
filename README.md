@@ -102,3 +102,10 @@ We also provide pretrained weights in `weights`, use the following command to te
 CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint=/path/to/2D3DMATR/weights/2d3dmatr-rgbdv2.pth
 CUDA_VISIBLE_DEVICES=0 python eval.py --test_epoch=-1
 ```
+
+## Acknowledgements
+
+**We sincerely thank the authors of [2D3D-MATR](https://github.com/minhaoolee/2D3DMATR) for their excellent work and publicly available codebase. Our implementation is partially built upon their repository.**
+
+
+
