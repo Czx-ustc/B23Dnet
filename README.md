@@ -103,9 +103,24 @@ CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint=/path/to/2D3DMATR/weights/2d3
 CUDA_VISIBLE_DEVICES=0 python eval.py --test_epoch=-1
 ```
 
+## Citation
+
+If you find this project useful in your research, please consider citing:
+
+```bibtex
+@inproceedings{cheng2025bridge,
+  title     = {Bridge 2D-3D: Uncertainty-aware Hierarchical Registration Network with Domain Alignment},
+  author    = {Cheng, Zhixin and Deng, Jiacheng and Li, Xinjun and Yin, Baoqun and Zhang, Tianzhu},
+  booktitle = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  pages     = {2491--2499},
+  year      = {2025}
+}
+```
+
 ## Acknowledgements
 
 **We sincerely thank the authors of 2D3D-MATR for their excellent work and publicly available codebase. Our implementation is partially built upon their repository.**
+
 
 
 
