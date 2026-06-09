@@ -15,8 +15,8 @@ Please use the following command for installation.
 
 ```bash
 # It is recommended to create a new environment
-conda create -n matr2d3d python=3.8
-conda activate matr2d3d
+conda create -n B23D python=3.8
+conda activate B23D
 
 # Install vision3d following https://github.com/qinzheng93/vision3d
 ```
@@ -26,8 +26,7 @@ The code has been tested on Python 3.8, PyTorch 1.13.1, Ubuntu 22.04, GCC 11.3 a
 ## 7Scenes
 
 ### Data preparation
-
-The dataset can be downloaded from [BaiduYun](YOUR_7SCENES_BAIDUYUN_LINK) (extraction code: m7mc). The data should be organized as follows:
+The data should be organized as follows:
 
 ```text
 --data--7Scenes--metadata
@@ -42,7 +41,7 @@ The dataset can be downloaded from [BaiduYun](YOUR_7SCENES_BAIDUYUN_LINK) (extra
 
 ### Training
 
-The code for 7Scenes is in `experiments/2d3dmatr.7scenes.stage4.level3.stage1`. Use the following command for training.
+The code for 7Scenes is in `experiments/B23D.7scenes`. Use the following command for training.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python trainval.py
@@ -61,7 +60,7 @@ CUDA_VISIBLE_DEVICES=0 ./eval.sh EPOCH
 We also provide pretrained weights in `weights`, use the following command to test the pretrained weights.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint=/path/to/2D3DMATR/weights/2d3dmatr-7scenes.pth
+CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint=/path/to/B23D/weights/b23d-7scenes.pth
 CUDA_VISIBLE_DEVICES=0 python eval.py --test_epoch=-1
 ```
 
@@ -69,7 +68,7 @@ CUDA_VISIBLE_DEVICES=0 python eval.py --test_epoch=-1
 
 ### Data preparation
 
-The dataset can be downloaded from [BaiduYun](YOUR_RGBD_SCENES_V2_BAIDUYUN_LINK) (extraction code: 2dc7). The data should be organized as follows:
+The data should be organized as follows:
 
 ```text
 --data--RGBDScenesV2--metadata
@@ -80,7 +79,7 @@ The dataset can be downloaded from [BaiduYun](YOUR_RGBD_SCENES_V2_BAIDUYUN_LINK)
 
 ### Training
 
-The code for RGB-D Scenes V2 is in `experiments/2d3dmatr.rgbdv2.stage4.level3.stage1`. Use the following command for training.
+The code for RGB-D Scenes V2 is in `experiments/B23D.rgbdv2`. Use the following command for training.
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python trainval.py
@@ -99,7 +98,7 @@ CUDA_VISIBLE_DEVICES=0 ./eval.sh EPOCH
 We also provide pretrained weights in `weights`, use the following command to test the pretrained weights.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint=/path/to/2D3DMATR/weights/2d3dmatr-rgbdv2.pth
+CUDA_VISIBLE_DEVICES=0 python test.py --checkpoint=/path/to/B23D/weights/B23D-rgbdv2.pth
 CUDA_VISIBLE_DEVICES=0 python eval.py --test_epoch=-1
 ```
 
