@@ -2,6 +2,10 @@
 
 We propose the B2-3Dnet, a novel uncertainty-aware hierarchical registration network with domain alignment, demonstrating excellent accuracy and strong generalization in image-to-point cloud registration tasks.
 
+<p align="center">
+  <img src="B23D.png" width="90%">
+</p>
+
 ## Installation
 
 Please use the following command for installation.
